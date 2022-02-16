@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;
+        300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <title>Canário</title>
+        <link rel="icon" type="imagem" href="/assets/canarioFavicon.png">
+
+    </head>
+    
+        <body>
+            
+            <div class="container">
+                <header class="cabecalho">
+
+                    <figure class="cabecalho__logo">
+                        
+                        <img src="/assets/logoCanario1.png" alt="Logo-Canário">
+                        <figcaption hidden>Logo-Canário</figcaption>
+                    </figure>
+
+                    <nav class="cabecalho__menuNavegacao">
+
+                        <ul class="cabecalho__menuLista">
+
+                            <li class="cabecalho__menuItem">
+                                <img src="/assets/casaCanario.svg" alt="Página Inicial">
+                                <a href="#">Página&nbsp;Inicial</a>
+                            </li>
+                        
+                            <li class="cabecalho__menuItem">
+                                <img src="/assets/exploraraC.svg" alt="Explorar">
+                                <a href="#">Explorar</a>
+                            </li>
+                        
+                            <li class="cabecalho__menuItem">
+                                <img src="/assets/noti.svg" alt="Notificações">
+                                <a href="#">Notificações</a>
+                            </li>
+                        
+                            <li class="cabecalho__menuItem">
+                                <img src="/assets/mensagem.svg" alt="Mensagens">
+                                <a href="#">Mensagens</a>
+                            </li> 
+                        
+                            <li class="cabecalho__menuItem">
+                                <img src="/assets/salvos.svg" alt="Itens salvos">
+                                <a href="#">Itens&nbsp;salvos</a>
+                            </li>
+                        
+                            <li class="cabecalho__menuItem">
+                                <img src="/assets/listaC.svg" alt="Listas">
+                                <a href="#">Listas</a>
+                            </li>
+                        
+                            <li class="cabecalho__menuItem">
+                                <img src="/assets/perfilCan.svg" alt="Perfil">
+                                <a href="#">Perfil</a>
+                            </li>
+                        
+                            <li class="cabecalho__menuItem">
+                                <img src="/assets/maisC.svg" alt="Mais">
+                                <a href="#">Mais</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    
+                </header>
+                <main class="conteudoPrincipal">
+
+                    <h3 class="conteudoPrincipal__titulo">Home</h3>
+                    
+                    <form action="#" class="conteudoPrincipal__formulario">
+                        <textarea name="CantaCanario" placeholder="O que está acontecendo?"></textarea>
+
+                        <button type="submit">Cantar</button>
+                    </form>
+                
+                    <section class="conteudoPrincipal__feed">
+                    
+                    <ul class="conteudoPrincipal__listaTweets">
+                    
+                        <li class="conteudoPrincipal__tweet">
+                            <img class="tweet__fotoPerfil" src="/assets/perfilFoto.svg" alt="João">
+                        
+                            <div class="tweet__conteudo">
+                                <h2>João</h2>
+                                <span><img class="sign" src="/assets/verified.png" alt="Verified-signal">  @joao-D-oliveira - 10s</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Proin finibus, magna et commodo malesuada,
+                                    sem lectus vehicula nisl, et posuere lorem erat sodales arcu.
+                                </p> 
+                            </div>
+                        </li>
+
+                        <li class="conteudoPrincipal__tweet">
+                            <img class="tweet__fotoPerfil" src="/assets/ComentarioPerfil.svg" alt="Cláudio">
+                        
+                            <div class="tweet__conteudo">
+                                <h2>Cláudio</h2>
+                                <span>@ramosClaudio - 8s</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Proin finibus, magna et commodo malesuada,
+                                    sem lectus vehicula nisl, et posuere lorem erat sodales arcu.
+                                </p> 
+                            </div>
+                        </li>
+
+                        <li class="conteudoPrincipal__tweet">
+                                <img class="tweet__fotoPerfil" src="/assets/comentarioFeminino.svg" alt="Paula">
+                           
+                                <div class="tweet__conteudo">
+                                <h2>Paula</h2>
+                                <span>@paulaAlda - 4s</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Proin finibus, magna et commodo malesuada,
+                                    sem lectus vehicula nisl, et posuere lorem erat sodales arcu.
+                                    #aprendendoFrontend
+                                </p> 
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                </main>
+            </div>
+
+            <script type="text/javascript" src="script.js"></script>
+
+        </body>
+</html>

@@ -1,0 +1,131 @@
+body{ 
+    margin: 0px;
+    font-family: 'Roboto', sans-serif; 
+}
+ul, img, span, p, h2, h3{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.cabecalho{
+    flex-basis: 25%;
+    min-width: 215px;
+}
+.cabecalho__logo{
+    margin: 18px 0px 40px;
+}
+.cabecalho__logo img{}
+
+.cabecalho__menuNavegacao{}
+
+.cabecalho__menuLista{}
+
+.cabecalho__menuItem {
+    max-width: 24px;
+    display: flex;
+}
+.cabecalho__menuItem img {
+    margin-bottom: 29px;
+}
+.cabecalho__menuItem a {
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    vertical-align: top;
+    margin-left: 15px;
+}
+a:hover {
+    color: #DAA520;
+    /*rgb(255, 223, 43);*/
+}
+a:active {
+    color: #FFB90F;
+}
+
+    /* Conteúdo do site */
+.conteudoPrincipal{
+    flex-basis: 70%;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.conteudoPrincipal__titulo{
+    padding: 15px 30px;
+}
+
+
+.conteudoPrincipal__formulario{
+    padding: 10px 30px;
+    border-top: 1px solid #ddd;
+    border-bottom: 10px solid #ddd;
+    text-align: right;
+}
+.conteudoPrincipal__formulario textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 55px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14.5px;
+}
+.conteudoPrincipal__formulario button{
+    background-color: #f3c955;
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 30px;
+    border-radius: 20px;
+}
+button:hover {
+    background-color: #FFD700;
+}
+
+
+.conteudoPrincipal__feed{}
+
+.conteudoPrincipal__listaTweets{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+.conteudoPrincipal__tweet{
+    padding: 20px 32px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.tweet__fotoPerfil{
+    max-width: 60px;
+}
+.tweet__conteudo{
+    margin-left: 15px;
+}
+.tweet__conteudo h2{
+    display: inline-block;
+    font-size: 16px;
+}
+.tweet__conteudo span{
+    display: inline-block;
+    color: #a0a09f;
+    margin-left: 2px;
+}
+.sign{
+    max-width: 16px;
+    align-items: center;
+}
+.tweet__conteudo p{
+    margin-top: 12px;
+    color: #363636;
+}
