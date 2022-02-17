@@ -21,6 +21,7 @@ function criarCanto(cantoTexto) {
     const canto = {
         nome: "João",
         foto: "/assets/perfilFoto.svg",
+        verificado: "/assets/verified.png",
         usuario:"@joao-D-oliveira",
         texto: cantoTexto,
         tempo: `${hora}:${minutos}`
@@ -31,7 +32,7 @@ function criarCanto(cantoTexto) {
 
 function listarTemplateCanto(canto){
 
-    const {nome, foto, usuario, texto, tempo} = canto;
+    const {nome, foto, verificado, usuario, texto, tempo} = canto;
 
     let li   = document.createElement("li");
     li.classList.add("conteudoPrincipal__tweet");
@@ -46,6 +47,10 @@ function listarTemplateCanto(canto){
     let h2   = document.createElement("h2");
     h2.innerText = nome;
 
+    let imgVerified = document.createElement("img")
+    imgVerified.src = verificado;
+    imgVerified.classList.add("verified");
+
     let span = document.createElement("span");
     span.innerText = `${usuario} - ${tempo}`;
 
@@ -53,12 +58,14 @@ function listarTemplateCanto(canto){
     p.innerText = texto;
 
     div.appendChild(h2);
+    div.appendChild(imgVerified);
     div.appendChild(span);
     div.appendChild(p);
 
     li.appendChild(img);
     li.appendChild(div);
 
+    
      feed.appendChild(li);
      textarea.value = ""
 }

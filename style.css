@@ -1,6 +1,7 @@
 body{ 
     margin: 0px;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 ul, img, span, p, h2, h3{
     list-style: none;
@@ -92,7 +93,9 @@ button:hover {
 }
 
 
-.conteudoPrincipal__feed{}
+.conteudoPrincipal__feed{
+    font-size: 14px;
+}
 
 .conteudoPrincipal__listaTweets{
     display: flex;
@@ -107,7 +110,7 @@ button:hover {
 
 
 .tweet__fotoPerfil{
-    max-width: 60px;
+    max-width: 50px;
 }
 .tweet__conteudo{
     margin-left: 15px;
@@ -119,11 +122,11 @@ button:hover {
 .tweet__conteudo span{
     display: inline-block;
     color: #a0a09f;
-    margin-left: 2px;
 }
-.sign{
-    max-width: 16px;
+.verified{
+    max-width: 15px;
     align-items: center;
+    margin: 0 3px 0;
 }
 .tweet__conteudo p{
     margin-top: 12px;
